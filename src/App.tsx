@@ -121,14 +121,14 @@ export default function App() {
         <img src={woodBg} alt="" className="w-full h-full object-cover" draggable={false} />
       </div>
 
-      <nav className="fixed top-5 left-1/2 -translate-x-1/2 z-50 whitespace-nowrap">
-        <div className="liquid-glass flex items-center gap-6 rounded px-5 py-2.5">
-          <div className="flex items-center gap-5">
+      <nav className="fixed top-4 left-2 md:left-1/2 md:-translate-x-1/2 z-50 whitespace-nowrap">
+        <div className="liquid-glass flex items-center rounded px-3.5 py-2.5 md:px-[26px] md:py-[13px]">
+          <div className="flex items-center gap-[15px] md:gap-[26px]">
             {NAV_LINKS.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm font-body font-light text-white/70 hover:text-white transition-colors duration-200"
+                className="text-[15px] md:text-lg font-body font-light text-white/70 hover:text-white transition-colors duration-200"
               >
                 {link.label}
               </a>
@@ -137,12 +137,12 @@ export default function App() {
         </div>
       </nav>
 
-      <a href="#top" className="fixed top-6 right-4 md:top-4 md:right-6 z-50">
+      <a href="#top" className="fixed top-4 right-2 md:right-6 z-50">
         <img
           src={logoImg}
           alt="Da Luca Pizzeria logo"
           draggable={false}
-          className="h-9 md:h-14 w-auto select-none drop-shadow-[0_0_10px_rgba(255,255,255,0.75)] transition-transform duration-200 hover:scale-[1.05]"
+          className="h-12 md:h-24 w-auto select-none drop-shadow-[0_0_10px_rgba(255,255,255,0.75)] transition-transform duration-200 hover:scale-[1.05]"
         />
       </a>
 
